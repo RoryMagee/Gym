@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link href="./css/glider.min.css" rel="stylesheet">
+    <link href="./css/glider.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
@@ -56,13 +61,14 @@
                 <p>Our premesis is fully wheelchair accsesible so nobody is excluded</p>
             </div>
             <div class="box">
-                    <i class="fas fa-utensils"></i>
+                <i class="fas fa-utensils"></i>
                 <h3>Meal Planning</h3>
-                <p>Helping you inside the gym and out. We are more than happy to develop a meal plan that suits your needs</p>
+                <p>Helping you inside the gym and out. We are more than happy to develop a meal plan that suits your
+                    needs</p>
             </div>
         </div>
     </section>
-    
+
     <section id="memberships_title">
         <div class="container">
             <h1>Membership Packages</h1>
@@ -71,7 +77,32 @@
 
     <section id="memberships">
         <div class="container">
-            <h1>Membership Packages</h1>
+            <div class="glider-contain multiple">
+                <button class="glider-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </button>
+                <div class="glider">
+                    <figure>
+                        <blockquote>Placeholder text</blockquote>
+                    </figure>
+                    <figure>
+                        <blockquote>Placeholder text</blockquote>
+                    </figure>
+                    <figure>
+                        <blockquote>Placeholder text</blockquote>
+                    </figure>
+                    <figure>
+                        <blockquote>Placeholder text</blockquote>
+                    </figure>
+                    <figure>
+                        <blockquote>Placeholder text</blockquote>
+                    </figure>
+                </div>
+                <button class="glider-next">
+                        <i class="fa fa-chevron-right"></i>
+                </button>
+                <div id="dots" class="glider-dots"></div>
+            </div>
         </div>
     </section>
 
@@ -80,6 +111,20 @@
             <p>Footer Text</p>
         </div>
     </footer>
+
+    <script src="./scripts/glider.min.js"></script>
+
+    <script>
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            draggable: true,
+            dots: '#dots',
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        });
+    </script>
 </body>
 
 </html>
