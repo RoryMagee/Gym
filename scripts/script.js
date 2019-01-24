@@ -3,7 +3,7 @@ new Glider(document.querySelector('.glider'), {
     draggable: true,
     dots: '#dots',
     arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
+        prev: '#glider-prev',
+        next: '#glider-next'
     }
 });
