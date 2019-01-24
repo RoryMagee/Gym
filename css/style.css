@@ -99,6 +99,10 @@ header .highlight, header .current a {
     color: black;
 }
 
+#newsletter .submit_button {
+    background-color: green;
+}
+
 #newsletter form {
     float: right;
     margin-top: 20px;
@@ -159,7 +163,14 @@ header .highlight, header .current a {
     bottom: 0px;
     background-color: #6de9ff;
     border-radius: 10px;
-    
+    color: black;
+    border-top: 2px solid #6de9ff;
+}
+
+.price:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
 }
 
 .membership_content {
