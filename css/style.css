@@ -183,10 +183,30 @@ header .highlight, header .current a {
     margin-left: 10px;
 }
 
-footer {
+.personal_training_ribbon{
+    position: relative;
+    background-color: pink;
+    width: 70%;
+    margin: auto;
+}
+
+.personal_training_ribbon blockquote {
+    width: 75%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.personal_training_ribbon img {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    float: right;
+}
+
+/* footer {
     padding: 20px;
     margin-top: 20px;
     color: black;
     background-color: #6de9ff;
     text-align: center;
-}
+} */
