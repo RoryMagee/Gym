@@ -1,8 +1,15 @@
+:root {
+    --main-bg-color: #80a59f;
+    --secondary-bg-color: #b2dbd5;
+    --third-bg-color: white;
+    --accent-color: #fa8d62; 
+  }
+
 body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: rgb(241, 240, 240);
+    background-color: var(--main-bg-color)
 }
 
 /* Global */
@@ -19,7 +26,7 @@ ul {
 
 button {
     height: 38px;
-    background: #6de9ff;
+    background: #56667A;
     border: 1px solid black;
     padding-left: 20px;
     padding-right: 20px;
@@ -28,10 +35,10 @@ button {
 
 /* Heaer */
 header {
-    background: #dedfe2;
+    background: var(--secondary-bg-color);
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #6de9ff 3px solid;
+    border-bottom: var(--accent-color) 3px solid;
 }
 
 header a {
@@ -61,7 +68,7 @@ header nav {
 }
 
 header .highlight, header .current a {
-    color: #6de9ff;
+    color: #56667A;
 }
 
 #showcase {
@@ -71,6 +78,7 @@ header .highlight, header .current a {
         rgba(0, 0, 0, 0.5)
       ),url('../assets/showcase.jpg') no-repeat 0 -400px;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     color: white;
 
@@ -91,7 +99,7 @@ header .highlight, header .current a {
 #newsletter {
     padding: 15px;
     color: white;
-    background: #dee0e2;
+    background: var(--secondary-bg-color)
 }
 
 #newsletter h1 {
@@ -133,14 +141,14 @@ header .highlight, header .current a {
 }
 
 #memberships_title {
-    background-color: #dee0e2;
+    background-color: var(--secondary-bg-color);
 }
 
 .card {
     position: relative;
-    background-color: #dee0e2;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
-    border: 2px solid #6de9ff;
+    border: 2px solid var(--accent-color);
     padding: 0px 0px 0px 0px;
     height: 500px;
 }
@@ -161,10 +169,10 @@ header .highlight, header .current a {
     position: absolute;
     width: 100%;
     bottom: 0px;
-    background-color: #6de9ff;
+    background-color: var(--accent-color);
     border-radius: 10px;
     color: black;
-    border-top: 2px solid #6de9ff;
+    border-top: 2px solid var(--accent-color);
 }
 
 .price:hover {
