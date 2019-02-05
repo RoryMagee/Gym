@@ -1,8 +1,12 @@
 :root {
-    --main-bg-color: #80a59f;
-    --secondary-bg-color: #b2dbd5;
+    /* --main-bg-color: #7ad8e0;
+    --secondary-bg-color: #ffcf81; 
     --third-bg-color: white;
-    --accent-color: #fa8d62; 
+    --accent-color: #fd9355; */
+    --main-bg-color: #eeeeee;
+    --secondary-bg-color: #8f8d8e; 
+    --third-bg-color: white;
+    --accent-color: #ff9681;
   }
 
 body {
@@ -146,7 +150,7 @@ header .highlight, header .current a {
 
 .card {
     position: relative;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--third-bg-color);
     border-radius: 10px;
     border: 2px solid var(--accent-color);
     padding: 0px 0px 0px 0px;
@@ -192,20 +196,21 @@ header .highlight, header .current a {
 }
 
 .personal_training > .personal_trainer_bg {
-    background-color: #dee0e2;
+    position: relative;
+    background-color: var(--secondary-bg-color);
     padding: 4em;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 }
 
+
 .wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 1em;
     grid-auto-rows: 35em;
 }
 
 .wrapper > div {
-    background: #dee0e2;
+    background: var(--secondary-bg-color);
     padding: 1em;
 }
 
